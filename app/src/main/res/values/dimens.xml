@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- font sizes -->
+    <dimen name="font_xxxlarge">34sp</dimen>
+    <dimen name="font_xxlarge">24sp</dimen>
+    <dimen name="font_xlarge">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_small">14sp</dimen>
+    <dimen name="font_xsmall">12sp</dimen>
+    <dimen name="font_xxsmall">10sp</dimen>
+
+    <!-- Margin/Padding -->
+    <dimen name="spacing_xxxlarge">24dp</dimen>
+    <dimen name="spacing_xxlarge">20dp</dimen>
+    <dimen name="spacing_xlarge">16dp</dimen>
+    <dimen name="spacing_large">12dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_small">6dp</dimen>
+    <dimen name="spacing_xsmall">4dp</dimen>
+    <dimen name="spacing_xxsmall">2dp</dimen>
+</resources>

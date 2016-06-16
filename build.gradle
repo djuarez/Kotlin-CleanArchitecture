@@ -1,0 +1,34 @@
+apply from: 'config/buildsystem/ci.gradle'
+apply from: 'config/buildsystem/dependencies.gradle'
+apply plugin: 'kotlin'
+
+
+buildscript {
+    ext.kotlin_version = '1.0.2-1'
+    repositories {
+        jcenter()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+        classpath "io.realm:realm-gradle-plugin:1.0.0"
+
+    }
+}
+
+allprojects {
+    ext {
+        androidApplicationId = "com.djuarez.rxkotlin"
+        androidVersionCode = 1
+        androidVersionName = "1.0"
+        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId = "com.djuarez.rxkotlin" + '.test'
+    }
+
+    task wrapper(type: Wrapper) {
+        description 'Creates the gradle wrapper.'
+        gradleVersion '2.8'
+    }
+}

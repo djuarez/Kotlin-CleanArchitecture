@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">app</string>
+    <string name="empty">This view is empty</string>
+    <string name="font.type">fonts/Avenir-Medium.ttf</string>
+    <string name="retry">Reintentar</string>
+    <string name="hide">ocultar</string>
+    <string name="updated_notification">Valores actualizados</string>
+    <string name="necessary_multiple_permissions">Permisos necesarios</string>
+</resources>
