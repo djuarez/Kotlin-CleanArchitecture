@@ -24,6 +24,7 @@ import rx.functions.Action1
 import rx.schedulers.Schedulers
 import rx.subscriptions.Subscriptions
 
+
 /**
  * Abstract class for a Use Case (Interactor in terms of Clean Architecture).
  * This interface represents a execution unit for different use cases (this means any use case
@@ -48,18 +49,29 @@ abstract class UseCase<T> protected constructor(private val threadExecutor: Thre
      */
     @SuppressWarnings("unchecked")
     fun execute(useCaseSubscriber: Subscriber<T>) {
-        this.subscription = this.buildUseCaseObservable().subscribeOn(Schedulers.from(threadExecutor)).observeOn(postExecutionThread.scheduler).subscribe(useCaseSubscriber)
+        this.subscription = this.buildUseCaseObservable()
+                .subscribeOn(Schedulers.from(threadExecutor))
+                .observeOn(postExecutionThread.scheduler)
+                .subscribe(useCaseSubscriber)
     }
 
     @SuppressWarnings("unchecked")
     fun execute(onNext: Action1<T>, onError: Action1<Throwable>) {
-        this.subscription = this.buildUseCaseObservable().subscribeOn(Schedulers.from(threadExecutor)).observeOn(postExecutionThread.scheduler).subscribe(onNext, onError)
+        this.subscription = this.buildUseCaseObservable()
+                .subscribeOn(Schedulers.from(threadExecutor))
+                .observeOn(postExecutionThread.scheduler)
+                .subscribe(onNext, onError)
     }
 
     @SuppressWarnings("unchecked")
     fun execute(onNext: Action1<T>, onError: Action1<Throwable>, onCompleted: Action0) {
-        this.subscription = this.buildUseCaseObservable().subscribeOn(Schedulers.from(threadExecutor)).observeOn(postExecutionThread.scheduler).subscribe(onNext, onError, onCompleted)
+        this.subscription = this.buildUseCaseObservable()
+                .subscribeOn(Schedulers.from(threadExecutor))
+                .observeOn(postExecutionThread.scheduler)
+                .subscribe(onNext, onError, onCompleted)
     }
+
+
 
     /**
      * Unsubscribes from current [Subscription].

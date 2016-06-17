@@ -2,7 +2,6 @@ package com.djuarez.rxkotlin.presentation.ui.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.djuarez.rxkotlin.R
@@ -24,7 +23,6 @@ class MainActivity : AppCompatActivity(), MainView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.e("pemma","daskdas,")
         component.inject(this)
         mainPresenter.view = this;
         mainPresenter.onCreate()

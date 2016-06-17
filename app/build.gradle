@@ -91,7 +91,6 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     kapt presentationDependencies.daggerCompiler
-    compile presentationDependencies.butterKnife
     compile presentationDependencies.dagger
     compile presentationDependencies.supportRecyclerView
     compile presentationDependencies.supportCardView
@@ -101,6 +100,8 @@ dependencies {
     compile presentationDependencies.rxJava
     compile presentationDependencies.rxAndroid
     compile presentationDependencies.glide
+    compile presentationDependencies.rxKotlin
+
     provided presentationDependencies.javaxAnnotation
 
     compile dataDependencies.retrofit2

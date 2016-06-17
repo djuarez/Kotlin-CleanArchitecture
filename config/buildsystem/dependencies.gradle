@@ -26,6 +26,7 @@ ext {
     timberVersion = '4.1.1'
     okHttpVersion = '3.2.0'
     dexterVersion = '2.2.2'
+    rxKotlinVersion = '0.60.0'
 
     //Testing
     robolectricVersion = '3.0'
@@ -48,7 +49,8 @@ ext {
                                 rxJava             : "io.reactivex:rxjava:${rxJavaVersion}",
                                 rxAndroid          : "io.reactivex:rxandroid:${rxAndroidVersion}",
                                 javaxAnnotation    : "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
-                                glide              : "com.github.bumptech.glide:glide:${glideVersion}"]
+                                glide              : "com.github.bumptech.glide:glide:${glideVersion}",
+                                rxKotlin           : "io.reactivex:rxkotlin:${rxKotlinVersion}"]
 
     presentationTestDependencies = [mockito           : "org.mockito:mockito-core:${mockitoVersion}",
                                     dexmaker          : "com.google.dexmaker:dexmaker:${dexmakerVersion}",
