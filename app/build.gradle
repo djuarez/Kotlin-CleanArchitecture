@@ -39,6 +39,10 @@ android {
         additionalParameters "--no-version-vectors"
     }
 
+    lintOptions {
+        abortOnError false
+
+    }
 
 
     packagingOptions {
