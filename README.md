@@ -4,7 +4,7 @@
 This is a sample app that is part of a blog post I have written about how to architect android application using the Uncle Bob's clean architecture and [Fernando Cejas Android-CleanArchitecture](https://github.com/android10/Android-CleanArchitecture) in Kotlin.
 
 
-Post in Spanish:[http://katade.com/clean-architecture-kotlin/](http://katade.com/clean-architecture-kotlin/)
+Post in Spanish: [http://katade.com/clean-architecture-kotlin/](http://katade.com/clean-architecture-kotlin/)
 
 Clean architecture
 -----------------
