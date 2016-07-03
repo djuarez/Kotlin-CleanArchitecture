@@ -15,7 +15,7 @@ Clean architecture
 License
 =======
 
-    Copyright 2016 Borja Bravo Álvarez
+    Copyright 2016 Daniel Juarez Moro
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
