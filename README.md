@@ -9,7 +9,7 @@ Post in Spanish: [http://katade.com/clean-architecture-kotlin/](http://katade.co
 
 Clean architecture
 -----------------
-![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](http://fernandocejas.com/wp-content/uploads/2014/09/clean_architecture1.png)
+![https://fernandocejas.com/assets/migrated/clean_architecture1.png](https://fernandocejas.com/assets/migrated/clean_architecture1.png)
 
 
 License
